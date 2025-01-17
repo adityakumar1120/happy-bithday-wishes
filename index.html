@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+  <style>
+  .hidden-message {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: #d72638;
+      animation: fadeIn 2s ease;
+    }
+
+   .popup-cont{
+    height: 80%;
+    width: 80%;
+    background: #000;
+  }
+  .popup{
+     height: 100%;
+     width: 100%;
+     background: #aa6b6b;
+    /* background-image: url(/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+    display: flex;
+    justify-content: center;
+  }
+  .popup-img{
+    height: 320px;
+    width: 320px;
+    background: #aa6b6b;
+  }
+  .popup-img img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+   }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="logo.jpg" alt=""></div>
+        <nav>
+            <ul class="flex">
+                <li><a href="https://www.instagram.com/web_script_developer_1120/profilecard/?igsh=MnB5M2E4ZzhsY2du" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                <li><a href="https://github.com/adityakumar1120" target="_blank"><i class="ri-github-fill"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+ <main>
+    <div class="container none">
+     <div class="text-img-cont">
+      <div>
+        <div class="bday-cont up-anime bday-anime"><h1 class="bday-anime">Happy Birthday!</h1></div>
+       <div class="name-cont up-anime name-anime"><h1 class="name-anime">Aditya</h1></div>
+       </div>
+        <div class="cake-img-cont">
+       <img src="cake-removebg-preview.png" alt="">
+          <div class="flame-wrapper">
+            <div class="flame red"></div>
+            <div class="flame orange"></div>
+            <div class="flame gold"></div>
+            <div class="flame white"></div>
+          </div>
+          <div class="black-burn"></div>
+        </div>
+     </div>
+
+      <div class="btn-cont">
+        <button class="btn">Blow</button>
+      </div>
+      <!-- <h1>Happy Birthday!</h1>
+      <p>You make the world a brighter place. Have a fantastic day!</p>
+      <div class="hidden-message" id="hiddenMessage">🎉 Wishing you joy, laughter, and all the love in the world! 🎂</div>
+    </div> -->
+  </div>
+  <div class="popup-cont">
+    <div class="popup">
+      <div class="popup-img">
+        <img src="img1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+ </main>
+
+  <script>
+    function revealMessage() {
+      const message = document.getElementById('hiddenMessage');
+      message.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
