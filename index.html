@@ -12,40 +12,15 @@
   rel="stylesheet"
 />
   <style>
-  .hidden-message {
+  /* .hidden-message {
       display: none;
       margin-top: 20px;
       font-size: 1.5rem;
       color: #d72638;
       animation: fadeIn 2s ease;
-    }
+    } */
 
-   .popup-cont{
-    height: 80%;
-    width: 80%;
-    background: #000;
-  }
-  .popup{
-     height: 100%;
-     width: 100%;
-     background: #aa6b6b;
-    /* background-image: url(/img1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; */
-    display: flex;
-    justify-content: center;
-  }
-  .popup-img{
-    height: 320px;
-    width: 320px;
-    background: #aa6b6b;
-  }
-  .popup-img img{
-     height: 100%;
-     width: 100%;
-     object-fit: cover;
-   }
+   
   </style>
 </head>
 <body>
@@ -85,13 +60,31 @@
       <div class="hidden-message" id="hiddenMessage">🎉 Wishing you joy, laughter, and all the love in the world! 🎂</div>
     </div> -->
   </div>
-  <!-- <div class="popup-cont">
+  <div class="popup-cont none">
     <div class="popup">
-      <div class="popup-img">
-        <img src="img1.jpg" alt="">
-      </div>
+      <div class="anime">
+      <p class="message">You make the world a brighter place. <br> Have a fantastic day!</p>
     </div>
-  </div> -->
+      <div class="overflow-hidden">
+      <div class="popup-img">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.aKMJXpIzxjJV1EYwCOWzNQHaHa&pid=Api&P=0&h=180" alt="" class="image">
+      <div class="relative">
+        <img src="Vector.svg" class="star">
+      <img src="Vector.svg" class="" id="star-2">
+      </div>
+      <!-- <i class="ri-gemini-fill"></i> -->
+      </div>
+     </div>
+      <p class="message-cont fade-in">
+        <span>🎉 </span>
+         <span class="message" id="message-2">Wishing you joy, laughter, and all the love in the world!</span>
+          <span>🎂</span>
+        </p>
+    </div> 
+    <img src="/assets/party horn1.svg" class="party-horn" id="horn-2">
+    <img src="/assets/party horn2.svg" class="party-horn" id="horn-1">
+    </div>
+  </div>
  </main>
 
   <script>
