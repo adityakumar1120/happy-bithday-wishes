@@ -2,7 +2,7 @@ const btn = document.querySelector('.btn')
 const flameWrapper = document.querySelector('.flame-wrapper')
 const containerElem = document.querySelector('.container')
 const popupElem = document.querySelector('.popup-cont')
-
+const main = document.querySelector('main')
 
 btn.addEventListener('click' , ()=>{
     flameWrapper.classList.add('hidden')
@@ -15,4 +15,13 @@ btn.addEventListener('click' , ()=>{
             popupElem.classList.remove('none')
         },100)
     },700)
+})
+
+function getWindowInnerWidth(){
+    const windowInnerheight = window.outerHeight
+    main.style.height = `${windowInnerheight}px`
+}
+
+window.addEventListener('resize', (e)=>{
+    getWindowInnerWidth()
 })
