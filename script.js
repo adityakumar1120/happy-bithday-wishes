@@ -39,12 +39,12 @@ btn.addEventListener('click' , ()=>{
     },1000)
 })
 
-function getWindowInnerWidth(){
-    const windowInnerheight = window.outerHeight
-    main.style.height = `${windowInnerheight}px`
-}
+// function getWindowInnerWidth(){
+//     const windowInnerheight = window.outerHeight
+//     main.style.height = `${windowInnerheight}px`
+// }
 
-window.addEventListener('resize', (e)=>{
-    getWindowInnerWidth()
-})
+// window.addEventListener('resize', (e)=>{
+//     getWindowInnerWidth()
+// })
 
