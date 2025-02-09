@@ -658,6 +658,11 @@ text-align: center;
   .message{
     font-size: 15px;
    }
+
+   .code #code-input {
+    padding-left: 15px;
+    font-size: 16px;
+}
    /* main{
     height: 90vh;
    } */
