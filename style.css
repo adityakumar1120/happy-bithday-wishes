@@ -648,7 +648,7 @@ text-align: center;
    }
 }
 
-@media (max-width:500px) {
+@media (max-width:700px) {
   .code #code-input {
     padding-left: 15px;
     font-size: 16px;
