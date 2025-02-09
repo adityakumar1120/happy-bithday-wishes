@@ -253,12 +253,12 @@ main{
   }
   /* after blow */
   .popup-cont{
-    /* height: 100%;
-    width: 100%; */
+    
     display: flex;
     align-items: center;
     justify-content: center;
-  /* background: #000; */
+    position: relative;
+    padding-inline: 20px;
 }
 .popup{
    height: 85%;
@@ -278,7 +278,7 @@ main{
   width: 320px;
   /* width: 100%;
   height: 100%; */
-  background: rgba(97, 77, 77, 0.379);
+ 
   position: relative;  
 }
 .star{
@@ -348,21 +348,7 @@ main{
   }
  }
 
- .party-horn{
-    position: absolute;
-    bottom: 0;
-    width: 70px;
-    /* left: 0; */
-  }
-  
-  #horn-1{
-    left: 0;
-    transform: translate(-8px , 13px);
-}
-#horn-2{
-  right: 0;
-  transform: translate(8px , 13px);
-}
+
 footer p{
   color: rgb(74, 68, 68);
   font-family: "Poppins", serif;
@@ -377,7 +363,6 @@ footer p{
 .snow-ball-container .snow-ball {
   position: absolute;
   border-radius: 50%;
-  background: white;
 }
 
 .snow-ball-container .snow-ball:nth-child(even) {
@@ -541,6 +526,122 @@ footer p{
   }
 }
 
+.code{
+  position: absolute;
+  background-color: white;
+  padding-block: 80px;
+  padding-inline: 40px;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  max-width: 280px;
+  width: 100%;
+  scale: 0;
+  transition: .7s all ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.input-cont{
+  position: relative;
+}
+.err{
+  position: absolute;
+  top: -21px;
+  left: 0;
+  font-size: 13px;
+  color: rgb(225 88 88);
+  transition: 0.1s all ease;
+}
+.scale-1{
+  scale: 1;
+}
+.code #code-input{
+  border: 2px solid rgb(28, 61, 207);
+  border-radius: 4px;
+  padding: 6px ;
+  padding-left: 20px;
+  outline: none;
+  font-size: 18px;
+}
+.code #code-input::placeholder{
+  color: rgb(113, 135, 235);
+}
+.code .submit{
+  font-family: sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  padding: 6px 10px;
+  background-image: linear-gradient(281deg, rgb(99 123 236), rgb(232 67 184));
+}
+/* proposal */
+
+.proposal-cont{
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-inline: 20px;
+}
+.propose{
+ height: 85%;
+ width: 85%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 25px;
+text-align: center;
+}
+.popup-img{
+  height: 320px;
+  width: 320px;
+  position: relative;  
+}
+.propose-image{
+  border-radius: 4px;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+  }
+ .message-cont{
+  font-size: 24px;
+ }
+ .message{
+  font-family: "Playwrite IN", serif;
+  color: white;
+  font-size: 24px;
+  background-image: linear-gradient(220deg, #5e0dec 10%, #f00c4b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ .propose-message{
+  font-family: "poppins";
+  line-height: 1.6;
+  letter-spacing: 2.3;
+ }
+/* animations */
+ .popup-img{
+  animation: fadeIn 1.5s ease-out;  
+}
+.fade-in{
+  animation: fadeIn 1.5s ease-in-out;
+}
+.message{
+  animation: fadeIn 1.5s ease-out ;
+}
+.yes-btn a{
+  color: white;
+  background-image: linear-gradient(220deg, #f44f2fc4 10%, #930aeec8 100%);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
 @media (min-width:950px) {
   .message{
     font-size: 24px;
@@ -566,7 +667,9 @@ footer p{
     font-size: 12px;
    }
 }
-
+.propose-message{
+  font-size: 16px;
+}
 
 
 .hidden{

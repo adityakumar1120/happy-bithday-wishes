@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy Birthday!</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script src="./script.js" defer></script>
   <link
   href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
   rel="stylesheet"
@@ -24,7 +24,7 @@
         </nav>
     </header>
  <main>
-    <div class="container">
+    <div class="container ">
      <div class="text-img-cont">
       <div>
         <div class="bday-cont up-anime bday-anime"><h1 class="bday-anime">Happy Birthday!</h1></div>
@@ -66,12 +66,39 @@
          <span class="message" id="message-2">Wishing you joy, laughter, and all the love in the world!</span>
           <span>🎂</span>
         </p>
+        <div class="code">
+          <div class="input-cont">
+            <input type="text" name="" id="code-input" placeholder="Enter your Birth Date">
+            <span class="err hidden">Please Enter your Birth Date</span>
+          </div>
+          <form id="proposalForm" action="#" method="POST">
+            <input type="hidden" name="answer" value="Yes! I want to be with you forever ❤️">
+            <a class="submit">See the Message</a>
+        </form>
     </div> 
     <!-- <div>
       <img src="/assets/party horn1.svg" class="party-horn" id="horn-2">
     <img src="/assets/party horn2.svg" class="party-horn" id="horn-1">
     </div> -->
     </div>
+    </div>
+
+    <div class="proposal-cont none">
+        <div class="propose">
+          <div class="overflow-hidden">
+            <div class="popup-img">
+              <img src="https://images.unsplash.com/photo-1559563362-c667ba5f5480?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9zZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="propose-image">  
+            </div>
+          </div>
+          <div class="anime">
+            <p class="message propose-message">Every time I see you, I fall for you all over again. I want to do that for the rest of my life. Will you be my love, now and always?"</p>
+          </div>
+          <p class="yes-btn fade-in">
+            <a href="#">Yes</a>
+            </p>
+        </div>
+    </div>
+
  </main>
   
   <div class="snow-ball-container"></div>
